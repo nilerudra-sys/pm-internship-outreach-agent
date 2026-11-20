@@ -1,0 +1,30 @@
+# Applicant profile and targeting preferences.
+# The AI agents read this file to personalise research and emails.
+
+[applicant]
+target_role = "Product Management Intern"
+education = "B.Tech Computer Science"
+specialization = "Cloud Computing"
+interests = ["AI products", "SaaS", "Product Management"]
+skills = ["OpenAI API", "Gemini API", "Cloud Computing", "Product thinking"]
+
+[[applicant.projects]]
+name = "SignalAI"
+url = "https://signal-ai.in"
+# Facts only (as provided by you). No user numbers or results claimed; add them here once you have them.
+summary = """Built and launched SignalAI (signal-ai.in), a live, early-stage, independently built and \
+bootstrapped AI competitive intelligence platform for SaaS founders. It monitors competitors' pricing pages \
+and changelogs, detects changes between snapshots, uses the Gemini API to explain what changed and why it \
+matters, and sends weekly email digests. Built with Next.js, TypeScript, Supabase, Playwright, Gemini and Resend."""
+problem = "Founders miss competitor pricing changes and product updates because checking competitor websites by hand is slow and inconsistent."
+# Campus Connect removed on purpose: emails mention only projects listed here.
+
+[targeting]
+india_ratio = 0.8
+international_ratio = 0.2
+# All industries are in scope; AI is not required. Full list: services/discovery/roles.py INDUSTRIES.
+sectors = ["SaaS", "Fintech", "E-commerce", "Consumer technology", "AI and ML", "EdTech", "HealthTech",
+           "Gaming", "Enterprise software", "Developer tools", "Logistics", "Mobility",
+           "Media and entertainment", "Telecom", "Banking and financial services"]
+work_mode_priority = ["remote", "remote_india_ok", "hybrid"]
+contact_roles_priority = ["founder", "cofounder", "head_of_product", "recruiter"]
